@@ -1,0 +1,1408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-wi=dth, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: #252b42;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #252b42;
+}
+header > div{
+  width: 100%;
+  height: 91px;
+  display: grid;
+}
+
+header > h1 {
+  color: aliceblue;
+  position: relative;
+  left: 136px;
+}
+
+.nav__links a,
+.cta {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+}
+
+.nav__links a {
+  font-size: 14px;
+  text-decoration: solid;
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+}
+
+.nav__links li {
+  padding: 0px 21px;
+}
+
+.nav__links li a {
+  transition: color 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+  color: #0088a9;
+}
+
+.cta {
+  padding: 15px 25px;
+  background-color: #23A6F0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease 0s;
+}
+.cta:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .close {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .nav__links,
+  .cta {
+    display: none;
+  }
+  .menu {
+    display: initial;
+  }
+}
+
+.menu {
+  display: none;
+}
+
+footer{
+  color: #737373;
+  background-color: white;
+}
+.byline{
+  padding: 25px;
+  font-size: large;
+}
+.last-pannel {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: white;
+}
+
+.bo {
+  color: #737373;
+  width: 241px;
+  height: 178px;
+}
+
+.lastla {
+  color: black;
+  text-align: left;
+}
+
+.htl_pa {
+  padding: 10px;
+  text-align: left;
+}
+
+.bottom-container {
+  padding: 4rem;
+  background-color: white;
+}
+
+.lasc {
+  width: 100%;
+  height: 570px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #252b42;
+}
+
+#webh {
+  color: #23A6F0;
+  text-align: center;
+  padding: 5px;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: 0.2px;
+}
+
+#rtd {
+  color: aliceblue;
+  text-align: center;
+  padding: 5px;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 50px; /* 125% */
+  letter-spacing: 0.2px;
+}
+
+#rtd2 {
+  color: aliceblue;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  padding: 5px;
+}
+
+/* Additional styling for email subscription box */
+.email-box {
+  width: 591px; /* Set the desired width */
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 5px;
+  padding: 1px;
+  margin: 80px;
+}
+
+.email-box input[type="email"] {
+  text-align: left;
+  flex: 1; 
+  padding: 8px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  
+}
+
+.email-box button {
+  padding: 15px 15px;
+  background-color: #23A6F0;
+  color: white;
+  border: none;
+  border: 1px solid #E6E6E6;
+  cursor: pointer;
+}
+
+.email-box button:hover {
+  background-color: #0056b3;
+}
+.last3rd{
+  width: 1044px;
+  height: 560px;
+  display: flex;
+  position: relative;
+  left: 15%;
+  /* border: 2px solid #23A6F0; */
+  justify-content: center;
+  align-items: center;
+}
+.bo3-1{
+  width: 348px;
+  height: 317px;
+  background-color: #E6E6E6;
+  /* border: 2px solid #23A6F0; */
+  margin: 0px 10px;
+  border-radius: 45px;
+  padding: 25px;
+}
+img[alt="image"]{
+  padding: 30px 0px 15px 0px;
+}
+.para{
+  color: var(--second-text-color, #737373);
+text-align: center;
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 142.857% */
+letter-spacing: 0.2px;
+padding: 0px 69.5px 30px 69.5px;
+}
+img[alt="image-3"]{
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+  margin: 0px 15px 0px 0px;
+}
+#imali{
+  width: 158px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  position: relative;
+  left: 25%;
+}
+#rani{
+  width: auto;
+  height: 50px;
+}
+#raja{
+  height: 50px;
+  width: 108px;
+
+}
+#rajaname{
+  color: var(--primary-text-color, #23A6F0);
+/* h6 */
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px; /* 171.429% */
+letter-spacing: 0.2px;
+}
+#rajaname>p{
+  display: flex;
+width: 348px;
+padding: 25px;
+flex-direction: column;
+align-items: center;
+}
+#above{
+  height: 134px;
+  width: 1044px;
+  position:relative;
+  left: 15%;
+  display: flex;
+  text-align: left;
+  flex-direction: column; 
+  gap: 10px;
+  margin-top: 260px;
+}
+#abovein1{
+  color: var(--primary-text-color, #23A6F0);
+
+/* h6 */
+font-family: Montserrat;
+text-align: left;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px; /* 171.429% */
+letter-spacing: 0.2px;
+}
+#abovein2{
+  color: var(--light-text-color, #FFF);
+  
+/* h2 */
+text-align: left;
+font-family: Montserrat;
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: 50px; /* 125% */
+letter-spacing: 0.2px;
+}
+#abovein3{
+  color: var(--light-text-color, #FFF);
+
+/* paragraph */
+font-family: Montserrat;
+text-align: left;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0.2px;
+}
+#tyu{
+  display: flex;
+  justify-content: center;
+  
+}
+#but{
+padding: 15px 40px;
+align-items: center;
+gap: 10px;
+border-radius: 6px;
+font-weight: 700;
+color: white;
+background: var(--primary-color, #23A6F0);
+}
+#qrt{
+color: var(--primary-color, #23A6F0);
+background-color: #24252a;
+border: 2px solid #23A6F0;
+border-radius: 6px;
+padding: 15px 40px;
+align-items: center;
+font-family: Montserrat;
+font-size: 14px;
+font-weight: 960;
+line-height: 15px; 
+letter-spacing: 0.2px;
+}
+#firstp{
+  width: 100%;
+  height: 682px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#ff-1{
+  height: 442px;
+  width: 542px;
+  margin-left: 132px;
+}
+#ff-1>h5{
+  color: var(--primary-color, #23A6F0);
+/* h5 */
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px; /* 150% */
+letter-spacing: 0.1px;
+margin-bottom: 30px;
+}
+#ff-1>h1{
+width: 542px;
+height: 240px; 
+color: var(--light-text-color, #FFF);
+font-family: Montserrat;
+font-size: 58px;
+font-style: normal;
+font-weight: 700;
+line-height: 80px;
+letter-spacing: 0.1px;
+margin-bottom: 30px;
+}
+#ff-1 p{
+color: var(--light-text-color, #FFF);
+font-family: Montserrat;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px; /* 150% */
+letter-spacing: 0.2px;
+margin-bottom: 30px;
+}
+#ff-2{
+  height: 633px;
+  width: 541px;
+
+}
+.tyu{
+  color: #FFF;
+}
+#ghy{
+  color: white;
+}
+#ff-2{
+  width: 541px;
+  height: 643px;
+  /* position: relative; */
+  display:flex;
+  align-items: center;
+}
+.g1{
+  height: 681px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 80px;
+}
+.gri1{
+  color: #E6E6E6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.gri1 .line{
+  width: 94px;
+  height: 7px;
+  background: var(--danger-color, #E74040);
+  margin-bottom: 35px;
+}
+.gri1 h2{
+  width: 378px;
+  color: var(--light-text-color, #FFF);
+
+/* h2 */
+font-family: Montserrat;
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: 50px; /* 125% */
+letter-spacing: 0.2px;
+margin-bottom: 35px;
+}
+.gri1 > p{
+  color: var(--light-text-color, #FFF);
+  height: 60px;
+  width: 351px;
+/* paragraph */
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 142.857% */
+letter-spacing: 0.2px;
+margin-bottom: 35px;
+}
+.gri1 a{
+  text-decoration: none;
+  color: var(--primary-text-color, #23A6F0);
+/* link */
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px; /* 171.429% */
+letter-spacing: 0.2px;
+
+}
+.gri2{
+  width: 239px;
+  height: 688px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  
+}
+.flb01{
+  width: 237px;
+  height: 292px;
+  display: flex;
+  padding: 35px 40px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  background: var(--light-background-color, #FFF);
+  box-shadow: 0px 13px 19px 0px rgba(0, 0, 0, 0.07);
+  border-radius: 10px;
+}
+.flb01 .ra{
+  width: 70px;
+  height: 76px;
+  display: flex;
+  padding: 22px 19px;
+  flex-direction: column;
+  align-items: flex-start;
+  /* text-align: left; */
+  gap: 10px;
+  background-color: #B2E3FF;
+  border-radius: 10px;
+  background: var(--faded-primary-color, #B2E3FF);
+  margin-bottom: 20px;
+  justify-content: center;
+}
+.flbo1 h6{
+  width: 157px;
+  color: var(--text-color, #252B42);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 24px; 
+  letter-spacing: 0.1px;
+}
+.liney{
+  width: 94px;
+  height: 7px;
+  background-color: #E74040;
+  margin-bottom: 35px;
+}
+.d{
+  height: 2px;
+  width: 50px;
+  background-color: #E74040;
+
+}
+.flb01 p{
+  /* paragraph feature-description */
+color: var(--second-text-color, #737373);
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 142.857% */
+letter-spacing: 0.2px;
+}
+.flb01 .re{
+  width: 70px;
+  height: 76px;
+  display: flex;
+  padding: 22px 19px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  background-color: #B9EAA8;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+.gri3{
+  display: flex;
+  width: 239px;
+  height: 688.706px;
+  padding-top: 48px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin-left: 30px;
+}
+.yu{
+  display: flex;
+  padding: 35px 40px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  border-radius: 10px;
+  background: var(--light-background-color, #FFF);
+  box-shadow: 0px 13px 19px 0px rgba(0, 0, 0, 0.07);
+  }
+.io{
+  width: 70px;
+  height: 76px;
+  display: flex;
+  padding: 22px 19px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 10px;
+  background: var(--faded-secondary-color-2, #FFDCD1);
+}
+.yt{
+  width: 157px;
+height: 48px;
+color: var(--text-color, #252B42);
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px; /* 150% */
+letter-spacing: 0.1px;
+}
+.ro{
+  width: 50px;
+  height: 2px;
+  background: var(--danger-color, #E74040);
+}
+.uj{
+  color: var(--second-text-color, #737373);
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; 
+letter-spacing: 0.2px;
+}
+.container2{
+  width: 100%;
+  height: 805px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.bbooxx1{
+  width: 434.945px;
+  height: 508.415px;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+.bbooxx2{
+  display: flex;
+  height: auto;
+  width: 381px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 35px;
+  flex-shrink: 0;
+
+}
+.bbooxx2 h2{
+  color: var(--light-text-color, #FFF);
+
+/* h2 */
+font-family: Montserrat;
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: 50px; /* 125% */
+letter-spacing: 0.2px;
+margin-bottom: 35px;
+}
+.bbooxx2 p{
+  color: var(--light-text-color, #FFF);
+
+/* paragraph */
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 142.857% */
+letter-spacing: 0.2px;
+margin-bottom: 35px;
+}
+.bbooxx2 a{
+  color: var(--primary-text-color, #23A6F0);
+
+/* link */
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px; /* 171.429% */
+letter-spacing: 0.2px;
+text-decoration: none;
+}
+.container3{
+  height: 871px;
+  width: 1031px;
+  display: grid;
+  grid-template-rows: 1fr 4fr;
+  margin: 160px 195px;
+}
+.container3 .grid1{
+  height: 134px;
+  width: 691px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.container2 #abovein1{
+  margin-bottom: 10px;
+}
+.container2 #abovein2{
+  margin-bottom: 10px;
+}
+.container2 #abovein3{
+  margin-bottom: 10px;
+}
+.grid2{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* justify-content: space-evenly; */
+  column-gap: 10px;
+}
+.bop1{
+  display: flex;
+  flex-direction: column;
+  width: 348px;
+  height: 678px;
+}
+.innercontanner1{
+  width: 348px;
+  height: 300px;
+  background-image: url(./image/product-cover-17.png);
+  display: flex;
+}
+.innercontanner2{
+  width: 348px;
+  height: 300px;
+  background-image: url(./image/product-cover-19.png);
+  display: flex;
+}
+.innercontanner3{
+  width: 348px;
+  height: 300px;
+  background-image: url(./image/product-cover-18.png);
+  display: flex;
+}
+.banner{
+  width: 51px;
+  height: 24px;
+  display: inline-flex;
+padding: 0px 10px;
+justify-content: center;
+align-items: center;
+border-radius: 3px;
+background: var(--danger-color, #E74040);
+
+/* light-drop-shadow */
+box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.10);
+position: relative;
+left: 30px;
+top: 30px;
+}
+.items{
+  width: 140px;
+  height: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  left: 50px;
+  top: 236px;
+  padding-bottom: 63px;
+}
+.op{
+  color: var(--light-text-color, #FFF);
+text-align: center;
+padding: 0px 10px;
+/* h6 */
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px; /* 171.429% */
+letter-spacing: 0.2px;
+}
+.heart{
+display: flex;
+width: 40px;
+height: 40px;
+padding: 10px;
+justify-content: center;
+align-items: center;
+padding-right: 10px;
+background-color: #E6E6E6;
+border-radius: 50%;
+}
+.basket{
+  display: flex;
+width: 40px;
+height: 40px;
+padding: 10px;
+justify-content: center;
+align-items: center;
+padding-right: 10px;
+background-color: #E6E6E6;
+border-radius: 50%;
+}
+.eye{
+  display: flex;
+width: 40px;
+height: 40px;
+padding: 10px;
+justify-content: center;
+align-items: center;
+background-color: #E6E6E6;
+border-radius: 50%;
+}
+img[alt="ytr"]{
+    width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+.contentcontainer{
+  width: auto;
+  height: 378px;
+  background-color: #E6E6E6;
+  padding-top: 25px;
+}
+.dabba{
+  height: auto;
+  width: 298px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.englishlabel{
+  color: var(--primary-text-color, #23A6F0);
+  text-decoration: none;
+font-family: Montserrat;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px; /* 171.429% */
+letter-spacing: 0.2px;
+  padding-left: 26px;
+  padding-bottom: 10px;
+  display: inline;
+}
+.rating-box {
+  height: 26px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  background-color: black;
+  color: #E6E6E6;
+  border-radius: 15px;
+  margin-left: 26px;
+  padding-bottom: 10px;
+}
+.grp{
+  width: auto;
+color: var(--text-color, #252b42);
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 900;
+line-height: 24px; /* 150% */
+letter-spacing: 0.1px;
+padding-left: 25px;
+}
+.star {
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+.rating {
+  font-size: 16px;
+}
+.iop{
+  color: var(--second-text-color, #737373);
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 142.857% */
+letter-spacing: 0.2px;
+margin: 10px 25px;
+}
+.sales{
+  display: flex;
+  height: 24px;
+  width: 140px;
+  justify-content: space-evenly;
+  align-items: center ;
+  padding: 10px 25px ;
+}
+img[iu]{
+  width: 16px;
+height: 16px;
+}
+.yce{
+  color: var(--second-text-color, #737373);
+
+/* h6 */
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px; /* 171.429% */
+letter-spacing: 0.2px;
+}
+.dollor{
+  height: 34px;
+  width: 108px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 15px;
+  margin-left: 25px;
+}
+.doll1{
+  width: 52px;
+  height: 24px;
+  color: var(--muted-color, #BDBDBD);
+text-align: center;
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px; /* 150% */
+letter-spacing: 0.1px;
+margin-left: 10px;
+}
+.doll2{
+  width: 52px;
+  height: 24px;
+color: var(--secondary-color-1, #40BB15);
+text-align: center;
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px; /* 150% */
+letter-spacing: 0.1px;
+}
+.container6{
+  height: 46px;
+  width: 298px;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center ;
+  padding: 10px;
+  margin-left: 20px;
+}
+.fty1{
+  width: 82px;
+  height: 16px ;
+  color: var(--second-text-color, #737373);
+/* small */
+font-family: Montserrat;
+font-size: 12px;
+font-style: normal;
+font-weight: 900;
+line-height: 16px; /* 133.333% */
+letter-spacing: 0.2px;
+}
+.fty2{
+  width: 82px;
+  height: 16px ;
+  color: var(--second-text-color, #737373);
+
+/* small */
+font-family: Montserrat;
+font-size: 12px;
+font-style: normal;
+font-weight: 900;
+line-height: 16px; /* 133.333% */
+letter-spacing: 0.2px;
+}
+.fty3{
+  width: 82px;
+  height: 16px ;
+  color: var(--second-text-color, #737373);
+
+/* small */
+font-family: Montserrat;
+font-size: 12px;
+font-style: normal;
+font-weight: 900;
+line-height: 16px; /* 133.333% */
+letter-spacing: 0.2px;
+}
+.butyr{
+  color: var(--primary-color, #23A6F0);
+
+/* h6 */
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px; /* 171.429% */
+letter-spacing: 0.2px;
+padding: 20px 40px;
+border: 4px solid #23A6F0;
+border-radius:30px;
+margin: 20px 0px 0px 10px;
+}
+img[alt="image_ui"]{
+  align-content: center;
+  position: relative;
+  left: 20px;
+  top: 50px;
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="logo">BrandName</h1>
+        <nav>
+            <ul class="nav__links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="#">Join us <img src="./icn arrow-right .icn-xs.png" alt="CLICK TO JOIN US"></a>
+    </header>
+    <div id="firstp">
+      <div id="ff-1">
+        <h5 >Join us</h5>
+        <h1 class="tyu">Highly <br>Distinguished Courses</h1>
+        <p id="ghy">We know how large objects will act,<br> 
+          but things on a small scale</p>
+          <button id="but">Get Quote Name</button>
+          <button id="qrt">Learn More</button>
+      </div>
+      <div id="ff-2">
+        <div class="flex_box"></div>
+        <img style="width: 450px;"  src="./image/Screenshot 2023-08-28 025900.png" alt="image_ui">
+      </div>
+    </div>
+    <div class="g1">
+      <div class="gri1">
+        <div class="liney"></div>
+        <h2>Package that are aprodable</h2>
+        <p>Problems trying to resolve the conflict between 
+          the two major realms of Classical physics: 
+          Newtonian mechanics </p>
+          <h6><a href="#">Learn More &gt</a></h6>
+      </div>
+      <div class="gri2">
+        <div class="flb01">
+          <div class="ra">
+            <img src="./icon cool-icon-25.svg" alt="image">
+          </div>
+          <h6 class="yt">Books Liberary</h6>
+          <div class="d"></div>
+          <p>The gradual 
+            accumulation of 
+            information about </p>
+        </div>
+        <div class="flb01">
+          <div class="re">
+            <img src="./icon cool-icon-15.svg" alt="image">
+          </div>
+          <h6 class="yt">Sales Planning</h6>
+          <div class="d"></div>
+          <p>The gradual 
+            accumulation of 
+            information about </p>
+        </div>
+      </div>
+      <div class="gri3">
+        <div class="yu">
+          <div class="io">
+            <img src="./icon cool-icon-23.svg" alt="image">
+          </div>
+          <h6 class="yt">2,769 Online Courses</h6>
+          <div class="ro">
+
+          </div>
+          <p class="uj">The Gradual accumulation of information about</p>
+        </div>
+      </div>
+
+    </div>
+    <div class="container2">
+      <div class="bbooxx1">
+        <img style="width: 100%;"  src="./Screenshot 2023-08-28 133900.png" alt="image_ui">
+      </div>
+      <div class="bbooxx2">
+      <div class="liney"></div>
+        <h2>Watch our Courses</h2>
+        <p>Problems trying to resolve the conflict between 
+          the two major realms of Classical physics: 
+          Newtonian mechanics </p>
+          <h6><a href="#">Learn More &gt</a></h6>
+        </div>
+    </div>
+    <div class="container3">
+      <div class="grid1">
+        <div id="abovein1">Practice Advice</div>
+      <div id="abovein2"><h2>Featured Product</h2></div>
+      <div id="abovein3"><p>Problems trying to resolve the conflict <br>between 
+        the two major realms of Classical physics: Newtonian mechanics </p></div>
+      </div>
+      <div class="grid2">
+        <div class="bop1">
+          <div class="innercontanner1">
+
+            <div class="banner">
+              <h6 class="op">Sale</h6>
+            </div>
+            <div class="items">
+              <div class="heart">
+                <img src="./image/heart.svg" alt="ytr">
+              </div>
+              <div class="basket">
+                <img src="./image/bich.svg" alt="ytr">
+              </div>
+              <div class="eye">
+                <img src="./image/eye.svg" alt="ytr">
+              </div>
+            </div>
+            
+          </div>
+          <div class="contentcontainer">
+            <div class="dabba">
+          <p class="ppp"><a href="#" class="englishlabel">English Department</a></p>
+          <div class="rating-box">
+            <div class="star"><img src="./image/star.svg" alt="im"></div>
+            <div class="rating">4.9</div>
+          </div>
+          </div>
+          <h4 class="grp">Graphic Design</h4>
+          <p class="iop">We focus on ergonomics and meeting 
+            you where you work. It's only a 
+            keystroke away.</p>
+            <div class="sales">
+              <div class="im">
+                <img src="./image/d box.svg" alt="iu">
+              </div>
+              <h4 class="yce">15 Sold</h4>
+            </div>
+            <div class="dollor">
+              <h4 class="doll1"> $16.48 </h4>
+              <h4 class="doll2"> $6.48 </h4>
+            </div>
+            <div class="container6">
+              <div class="fty1">
+                <img src="./image/ghadi.svg" alt="iy">
+                <p class="tyr">22hr 30min</p>
+              </div>
+              <div class="fty2">
+                <img src="./image/water.svg" alt="iy">
+                <p class="tyr">64 Lesson</p>
+              </div>
+              <div class="fty3">
+                <img src="/image/icon ant-design-area-chart-outlined.svg" alt="iy">
+                <p class="tyr">Progress</p>
+              </div>
+            </div>
+            <button class="butyr"><h4>Learn More </h4></button>
+        </div>
+          
+            
+        </div>
+        <div class="bop1">
+          <div class="innercontanner2">
+
+            <div class="banner">
+              <h6 class="op">Sale</h6>
+            </div>
+            <div class="items">
+              <div class="heart">
+                <img src="./image/heart.svg" alt="ytr">
+              </div>
+              <div class="basket">
+                <img src="./image/bich.svg" alt="ytr">
+              </div>
+              <div class="eye">
+                <img src="./image/eye.svg" alt="ytr">
+              </div>
+            </div>
+            
+          </div>
+          <div class="contentcontainer">
+            <div class="dabba">
+          <p class="ppp"><a href="#" class="englishlabel">English Department</a></p>
+          <div class="rating-box">
+            <div class="star"><img src="./image/star.svg" alt="im"></div>
+            <div class="rating">4.9</div>
+          </div>
+          </div>
+          <h4 class="grp">Graphic Design</h4>
+          <p class="iop">We focus on ergonomics and meeting 
+            you where you work. It's only a 
+            keystroke away.</p>
+            <div class="sales">
+              <div class="im">
+                <img src="./image/d box.svg" alt="iu">
+              </div>
+              <h4 class="yce">15 Sold</h4>
+            </div>
+            <div class="dollor">
+              <h4 class="doll1"> $16.48 </h4>
+              <h4 class="doll2"> $6.48 </h4>
+            </div>
+            <div class="container6">
+              <div class="fty1">
+                <img src="./image/ghadi.svg" alt="iy">
+                <p class="tyr">22hr 30min</p>
+              </div>
+              <div class="fty2">
+                <img src="./image/water.svg" alt="iy">
+                <p class="tyr">64 Lesson</p>
+              </div>
+              <div class="fty3">
+                <img src="/image/icon ant-design-area-chart-outlined.svg" alt="iy">
+                <p class="tyr">Progress</p>
+              </div>
+            </div>
+            <button class="butyr"><h4>Learn More </h4></button>
+        </div>
+          
+            
+        </div>
+        <div class="bop1">
+          <div class="innercontanner3">
+
+            <div class="banner">
+              <h6 class="op">Sale</h6>
+            </div>
+            <div class="items">
+              <div class="heart">
+                <img src="./image/heart.svg" alt="ytr">
+              </div>
+              <div class="basket">
+                <img src="./image/bich.svg" alt="ytr">
+              </div>
+              <div class="eye">
+                <img src="./image/eye.svg" alt="ytr">
+              </div>
+            </div>
+            
+          </div>
+          <div class="contentcontainer">
+            <div class="dabba">
+          <p class="ppp"><a href="#" class="englishlabel">English Department</a></p>
+          <div class="rating-box">
+            <div class="star"><img src="./image/star.svg" alt="im"></div>
+            <div class="rating">4.9</div>
+          </div>
+          </div>
+          <h4 class="grp">Graphic Design</h4>
+          <p class="iop">We focus on ergonomics and meeting 
+            you where you work. It's only a 
+            keystroke away.</p>
+            <div class="sales">
+              <div class="im">
+                <img src="./image/d box.svg" alt="iu">
+              </div>
+              <h4 class="yce">15 Sold</h4>
+            </div>
+            <div class="dollor">
+              <h4 class="doll1"> $16.48 </h4>
+              <h4 class="doll2"> $6.48 </h4>
+            </div>
+            <div class="container6">
+              <div class="fty1">
+                <img src="./image/ghadi.svg" alt="iy">
+                <p class="tyr">22hr 30min</p>
+              </div>
+              <div class="fty2">
+                <img src="./image/water.svg" alt="iy">
+                <p class="tyr">64 Lesson</p>
+              </div>
+              <div class="fty3">
+                <img src="/image/icon ant-design-area-chart-outlined.svg" alt="iy">
+                <p class="tyr">Progress</p>
+              </div>
+            </div>
+            <button class="butyr"><h4>Learn More </h4></button>
+        </div>
+          
+            
+        </div>
+      </div>
+    </div>
+    <div id="above">
+      <div id="abovein1">Practice Advice</div>
+      <div id="abovein2"><h2>Each and every client is important.</h2></div>
+      <div id="abovein3"><p>Problems trying to resolve the conflict <br>between 
+        the two major realms of Classical physics: Newtonian mechanics </p></div>
+    </div>
+
+    <div class="last3rd" id="ls3">
+      <div class="bo3-1" id="x3">
+        <div id="tyu">
+          <img src="./icn bxs-star.svg" alt="image"><img src="./icn bxs-star.svg" alt="image"><img src="./icn bxs-star.svg" alt="image"><img src="./icn bxs-star.svg" alt="image"><img src="./icn bx-star.svg" alt="image">
+        </div>
+        <p class="para" id="para1">Slate helps you see 
+          how many more days 
+          you need to work to 
+          reach your financial 
+          goal for the month 
+          and year.</p>
+          <div id="imali">
+            
+            <div id="rani"><img src="https://s3-alpha-sig.figma.com/img/965d/2dd8/c07fcd9a2224286bd6646177d9140cc0?Expires=1693785600&Signature=j4ztYiySfPgIvduFylsZ0mmw~ip58lV~JvPkXXJBU5gr2RLerHdgF96ykgSsiKemBO2y5P2X9swTm6~Iojb-054lislCoywg0~NxJW1VJYNsP~08ZluClSEkjqumDc6DjGZHHRJwnncibytUGWyr1pMulX2bm-MvqstzQIQQ4C9tjKJCqYVUhbIWRIVXuoziejU0XiBkZGvaMqJdw17t56H064IkTQTtPYarvQNX1lcp-oM5OUF75~2Dq7wfyQMac5~fLd6rDF5FRQ0~AMlFu7Zilx2PDk0VzOhTuNV8bP6H10WnTeALNYz0QYABS3KHE6ycODHaI70mShyojMkMBA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="image-3"></div>
+            <div id="raja"><h6 id="rajaname">Regina Miles</h6>
+              <p>Designer</p>
+            </div>
+          </div>
+          
+      </div>
+      <div class="bo3-1" id="x3">
+        <div id="tyu">
+          <img src="./icn bxs-star.svg" alt="image"><img src="./icn bxs-star.svg" alt="image"><img src="./icn bxs-star.svg" alt="image"><img src="./icn bxs-star.svg" alt="image"><img src="./icn bx-star.svg" alt="image">
+        </div>
+        
+        <p class="para" id="para2">Slate helps you see 
+          how many more days 
+          you need to work to 
+          reach your financial 
+          goal for the month 
+          and year.</p>
+          <div id="imali">
+            
+            <div id="rani"><img src="https://s3-alpha-sig.figma.com/img/a883/1d55/238d7561a9d800709e7fa7d20a9633ba?Expires=1693785600&Signature=gmVqBGXfe~9ikQO9ChUzIl37G0tcFPyffZxMgrN5iu97sp6fb1LOCAVWidd2aItFLFFO523zHYMQy6QD7phqnSdQQ~5cSNitP55mTZx2lFNDNUOVx6mB-WWH-fh29lS9FcQXYpv5EoerK-TXPQ-4tLCIpqvObmttlBN5yY89x3on7NfvvTHVYz6pFMuHxOaKGqCoCB3I2AJD1uAHwWhngUFdktPqaNM-eEZGl0A3qLACvlNF-6EFSJFMbluroHIV39i9-0ME9Pc9WVNslinBDpBCLqpEDnENkoakRohZyBZSXr4~7XoKdAqw5f4ue69BOQ9aKtw0XpFqwyl6iI-ixw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="image-3"></div>
+            <div id="raja"><h6 id="rajaname">Regina Miles</h6>
+              <p>Designer</p>
+            </div>
+          </div>
+      </div>
+      <div class="bo3-1" id="x3">
+        <div id="tyu">
+          <img src="./icn bxs-star.svg" alt="image"><img src="./icn bxs-star.svg" alt="image"><img src="./icn bxs-star.svg" alt="image"><img src="./icn bxs-star.svg" alt="image"><img src="./icn bx-star.svg" alt="image">
+        </div>
+        <p class="para" id="para2">Slate helps you see 
+          how many more days 
+          you need to work to 
+          reach your financial 
+          goal for the month 
+          and year.</p>
+          <div id="imali">
+            
+            <div id="rani"><img src="https://s3-alpha-sig.figma.com/img/2a23/3d43/e274dc4c71a68056f06f7d2f625bb23d?Expires=1693785600&Signature=F6lh0T0LUAFI704JKVbOS-sZWzYVXJCCQAwZfKXl18Qa5XH6JRwXgVOgq5IqOkCZDdadptyL4fw7eU0Ct6nUuW7H3r1XQnVNK-lyyFJ6AOr6Y1R8bosH4EglqwskbTOK8m6syDrSHxHlOAEZ9bZ27CIUyJ8W5D4s7KJonLLm~tfqvJ67blIXBqgRRXOtwS8cX2XF7hjZE872l4cxeG9WrpT8ysBVpK8MtWY67z5A-z018L~I4AlvF-0Y4eQ30YlkFnM~GviiFg6mGiTOWF6Uri-2CbZQM-ewik757Fpt8Dom4PH65hNn8XfMIhpZBknORIL8zO8gl9jCDx7-mJnTdw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="image-3"></div>
+            <div id="raja"><h6 id="rajaname">Regina Miles</h6>
+              <p>Designer</p>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="lasc" id="laseccontainer">
+      <!-- <div class="csb" id="containersec"></div> -->
+      <h6 id="webh">Practice Advice</h6>
+      <h3 id="rtd">JOIN US</h3>
+      <P id="rtd2">Problems trying to resolve the conflict between <br>
+        the two major realms of Classical physics: Newtonian mechanics </P>
+        <div class="email-box">
+          <input type="email" placeholder="Your Email">
+          <button>Subscribe</button>
+        </div>
+    </div>
+    <div class="bottom-container">
+    <div class="last-pannel" id="lastp">
+      <div class="bo" id="bo1">
+        <h2 class="lastla">Get In Touch</h2>
+        <h4 class="htl_pa">the quick fox jumps over the 
+          lazy dog</h4>
+        
+      </div>
+      <div class="bo" id="bo2">
+        <h2 class="lastla">Company info</h2>
+        <h4 class="htl_pa">About Us</h4>
+        <h4 class="htl_pa">Carrier</h4>
+        <h4 class="htl_pa">We are Hiring</h4>
+        <h4 class="htl_pa">Blog</h4>
+      </div>
+      <div class="bo" id="bo3">
+        <h2 class="lastla">Features</h2>
+        <h4 class="htl_pa">Business Marketing</h4>
+        <h4 class="htl_pa">User Analytic</h4>
+        <h4 class="htl_pa">Live Chat</h4>
+        <h4 class="htl_pa">Unlimited Support</h4>
+      </div>
+      <div class="bo" id="bo4">
+        <h2 class="lastla">Resources</h2>
+        <h4 class="htl_pa">IOS & Android</h4>
+        <h4 class="htl_pa">Watch a Demo</h4>
+        <h4 class="htl_pa">Customers</h4>
+        <h4 class="htl_pa">API</h4>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="byline">
+    <h4 style="text-align: center;">Made With Love By Ujjwal All Right Reserved</H4>
+  </div>
+  </footer>
+  
+
+</body>
+</html>
